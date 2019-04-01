@@ -13,12 +13,11 @@ public class ConcessionariaTesteDrive {
         System.out.println("Comissão: " + v1.getComissao(totalVendasMes));
         System.out.println("Gerente: ");
         System.out.println("Comissão: " + g1.getComissao(totalVendasMes));
+        System.out.println("Salário Antigo: " + v1.getSalarioDoMes(totalVendasMes));
 
-        if(g1.aumentarSalarioBaseVendedor(v1)){
+        if(g1.aumentarSalarioBaseVendedor(v1,0.3)){
             System.out.println("Pode dar Aumento! ");
-            Vendedor vx = new Vendedor(v1.getNome(),3000,g1);
-            System.out.println("Salário Antigo: " + v1.getSalarioDoMes(totalVendasMes));
-            System.out.println("Salário Velho: " + vx.getSalarioDoMes(totalVendasMes));
+            System.out.println("Salário Novo: " + v1.getSalarioDoMes(totalVendasMes));
         } else {
             System.out.println("Não pode dar aumento! ");
         }

@@ -29,8 +29,9 @@ public class Gerente {
         return this.comissao*totalDeVendas + 0.5*this.salarioBase;
     }
 
-    public boolean aumentarSalarioBaseVendedor(Vendedor vendedor){
+    public boolean aumentarSalarioBaseVendedor(Vendedor vendedor, double aumento){
         if(vendedor.getGerente().equals(this)) {
+            vendedor = new Vendedor(vendedor.getNome(), vendedor.getSalarioBase()*(1+aumento), this);
             return true;
         } else {
             return false;
