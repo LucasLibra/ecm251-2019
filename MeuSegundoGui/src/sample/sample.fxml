@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label fx:id="lblText" text="Sou do Benfica e isto me envaidece" textFill="#ff0d00" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTextSporting" text="O Sporting nasceu um dia,  sob o signo do Leão" textFill="#72d342" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#changeText" prefHeight="32.0" prefWidth="168.0" text="Benfica" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#changeTextSporting" prefHeight="1.0" prefWidth="167.0" text="Sporting" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField fx:id="txtName" onAction="#changeText" promptText="Insira sua equipa" text=" " GridPane.columnIndex="1">
+         <padding>
+            <Insets left="8.0" right="8.0" />
+         </padding></TextField>
+   </children>
+</GridPane>
